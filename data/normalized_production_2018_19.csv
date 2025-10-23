@@ -1,0 +1,20 @@
+state,district,year,crop,production
+Tamil Nadu,Karur,2018,Rice,12000
+Tamil Nadu,Karur,2019,Rice,11000
+Tamil Nadu,Karur,2018,Wheat,3000
+Tamil Nadu,Karur,2019,Wheat,3200
+Karnataka,Bengaluru,2018,Rice,15000
+Karnataka,Bengaluru,2019,Rice,14000
+Karnataka,Bengaluru,2018,Wheat,2000
+Karnataka,Bengaluru,2019,Wheat,2100state,district,year,crop,production
+Tamil Nadu,Karur,2018,Rice,12000
+Tamil Nadu,Karur,2019,Rice,11000
+Tamil Nadu,Karur,2018,Wheat,3000
+Tamil Nadu,Karur,2019,Wheat,3200
+Karnataka,Bengaluru,2018,Rice,15000
+Karnataka,Bengaluru,2019,Rice,14000
+Karnataka,Bengaluru,2018,Wheat,2000
+Karnataka,Bengaluru,2019,Wheat,2100year,crop_production_lakh_tonnes_total_millets
+2021-22,160.0
+2022-23,173.21
+2023-24,175.72

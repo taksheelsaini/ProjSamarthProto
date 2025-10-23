@@ -1,0 +1,10 @@
+streamlit>=1.20
+pandas>=1.5
+requests>=2.28
+python-dotenv>=1.0.0
+plotly>=5.0
+scipy>=1.10
+
+# Note: live catalog SDKs are not included by default since live API access is disabled.
+# The prototype uses local normalized CSVs. Install an appropriate catalog client only
+# if you plan to re-enable live dataset fetching.
