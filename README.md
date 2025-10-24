@@ -172,3 +172,36 @@ Thanks for trying Project Samarth! If you want, I can also:
 Have fun learning! 🎉🚜📈
 
 
+
+---
+
+## Challenge status — what is done and what remains 🧭
+
+Below is a short, student-friendly summary of the current project state compared to the original challenge goals.
+
+- Done ✅
+
+  - A reproducible Streamlit demo app (`run_app.py`) that loads normalized CSVs from `data/` and answers four template questions with simple provenance. 🌐
+  - Four implemented question templates in `qa_engine.py` and a policy-argument builder in `generator.py`. These were smoke-tested locally. 🔬
+  - Normalization helpers (`normalization.py`, `schema_mapper.py`) to turn messy tables into the canonical CSV shape used by the app. 🧹
+  - Included small normalized CSV examples in `data/` so the app runs without internet. 📂
+  - A clean Git history: the repository was reinitialized and pushed with a single commit for a tidy starting point. 🧾
+  - Deployment guidance (`DEPLOY_TO_STREAMLIT.md`) and an example secrets file (`.streamlit/secrets.example.toml`) to help publish on Streamlit Community Cloud. 🚀
+
+- Remaining / Future work ⏳
+
+  - Live data ingestion: programmatic discovery and robust fetching from data.gov.in/CKAN catalogs (IMD and agriculture resources). This needs rate-limit handling and retry logic. 🌐🔁
+  - Wider schema coverage: more mapping rules to handle diverse real-world table shapes and coded values (units, state/district name variants). 🗺️
+  - Station metadata registry: authoritative mapping for weather station → administrative region to improve rainfall aggregation accuracy. 📡➡️📍
+  - Row-level provenance: link results back to exact resource URLs and CSV row numbers so each claim is auditable. 🔗🔢
+  - Better question parsing: a lightweight NLP router to map free-text questions to the correct template and extract parameters. 🤖🧠
+  - Unit tests & CI: add pytest tests for the templates and a GitHub Actions workflow to run the smoke script on every push. ✅
+  - Final deliverables: polish conversational UI, make a 2-minute demo video, and prepare the final submission package. 🎬📦
+
+If you want, I can now (pick one):
+
+- implement the live CKAN ingestion plumbing first (longer work), or
+- add a small CI workflow and unit tests (quick win), or
+- finish by committing this README change and pushing it to the GitHub repo now (I will do this next if you confirm).
+
+
