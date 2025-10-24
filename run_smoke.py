@@ -1,6 +1,6 @@
-"""Simple smoke test runner for project-samarth.
+"""Simple smoke test runner for my Project Samarth.
 
-Loads sample evidence, normalizes it, runs the generator and prints results.
+I load sample evidence, normalize it, run the generator, and print results.
 """
 from normalization import normalize_evidence, provenance_score
 from generator import generate_policy_argument
@@ -9,7 +9,7 @@ import os
 
 def main():
     # Construct a minimal sample evidence set from the two normalized CSV filenames.
-    # This avoids relying on an extra sample JSON file and keeps the smoke test self-contained.
+    # I avoid relying on an extra sample JSON file and keep the smoke test self-contained.
     data = [
         {"date": "2024-06-01", "source": "local://data/normalized_production_2018_19.csv", "headline": "Production signal from normalized production dataset", "relevance": 8},
         {"date": "2023-09-15", "source": "local://data/normalized_rainfall_2018_19.csv", "headline": "Rainfall signal from normalized rainfall dataset", "relevance": 7},

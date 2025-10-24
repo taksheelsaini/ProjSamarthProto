@@ -19,7 +19,9 @@ This project is a small Streamlit app that helps you compare agriculture (crop p
 
 ## What this project does (short) 🧾
 
-- Lets you load crop production and rainfall data.
+ You can load crop production and rainfall data.
+
+You can run four small question templates:
 
 - Lets you run four small question templates:
 
@@ -90,7 +92,7 @@ streamlit run run_app.py
 
 - The app can also search CKAN-style data catalogs and attempt to download CSV, Excel or JSON resources if you configure a catalog API key. This is optional. 🔁
 
-**Important:** For reproducible demos we included small normalized CSVs in `data/` so you will get the same results shown in examples. 📂✅
+**Important:** For reproducible demos I included small normalized CSVs in `data/` so you will get the same results shown in examples. 📂✅
 
 ---
 
@@ -164,7 +166,7 @@ If something looks wrong, open the CSV in `data/` and inspect the rows used by t
 
 ---
 
-Thanks for trying Project Samarth! If you want, I can also:
+Thanks for trying Project Samarth! If you want to extend it, you can:
 
 - add a short set of unit tests for the templates, or
 - create a one-page lab exercise with step-by-step student tasks.
@@ -198,10 +200,11 @@ Below is a short, student-friendly summary of the current project state compared
   - Unit tests & CI: add pytest tests for the templates and a GitHub Actions workflow to run the smoke script on every push. ✅
   - Final deliverables: polish conversational UI, make a 2-minute demo video, and prepare the final submission package. 🎬📦
 
-If you want, I can now (pick one):
+You can continue by:
 
-- implement the live CKAN ingestion plumbing first (longer work), or
-- add a small CI workflow and unit tests (quick win), or
-- finish by committing this README change and pushing it to the GitHub repo now (I will do this next if you confirm).
+- Implementing live CKAN ingestion plumbing for robust data fetching (longer work)
+- Adding a small CI workflow and unit tests for the templates (quick win)
+- Committing README changes and pushing to the GitHub repo
+
 
 

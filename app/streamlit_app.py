@@ -16,7 +16,7 @@ st.title("Project Samarth — Agriculture ⚖️ Climate Q&A (Prototype)")
 
 # Sidebar
 st.sidebar.header("Configuration")
-st.sidebar.write("Using local normalized CSVs (no live API fetch)")
+st.sidebar.write("This app uses only local normalized CSVs (no live API fetch)")
 
 client = DataGovClient()
 
@@ -178,7 +178,7 @@ for meta in provenance:
         st.sidebar.write(meta.get('publisher'))
     if meta.get('url'):
         st.sidebar.markdown(f"[Resource link]({meta.get('url')})")
-st.sidebar.markdown("Methods: averages, sums, ranks, Pearson correlation computed over normalized fields `production_tonnes` and `rainfall_mm`")
+st.sidebar.markdown("Methods I use: averages, sums, ranks, Pearson correlation computed over normalized fields `production_tonnes` and `rainfall_mm`")
 
 st.markdown("---")
 st.markdown("Sample questions:")

@@ -1,9 +1,9 @@
 from datetime import datetime
 
 def normalize_evidence(evidence_items):
-    """Normalize raw evidence: ensure fields id, date (datetime), source, headline, score.
+    """I normalize raw evidence: ensure fields id, date (datetime), source, headline, score.
 
-    Heuristics used:
+    My heuristics:
     - Parse date if string in YYYY-MM-DD
     - Assign default score based on recency and presence of `relevance` or `trust` fields
     """
@@ -41,7 +41,7 @@ def normalize_evidence(evidence_items):
     return norm
 
 def provenance_score(arguments):
-    """Aggregate provenance score for generated arguments. Returns dict with mean and weighted.
+    """I aggregate provenance score for generated arguments. Returns dict with mean and weighted.
     Arguments is list of dict containing 'provenance' field.
     """
     vals = [a.get('provenance',0.0) for a in arguments]

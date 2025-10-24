@@ -1,7 +1,7 @@
-"""Schema mapper: heuristics to map dataset columns to canonical names used by the QA engine.
+"""Schema mapper: I use heuristics to map dataset columns to canonical names used by my QA engine.
 
 Canonical fields: state, district, year, crop, production, avg_annual_rainfall
-This module provides:
+I provide:
 - map_schema(df): returns (df_mapped, mapping)
 - extract_provenance_rows(df, filters): helper to return selected rows for provenance
 """
@@ -11,7 +11,7 @@ import difflib
 try:
     from codebook_parser import guess_and_apply
 except Exception:
-    # If codebook_parser is not present (we removed live-fetch helpers), provide a noop fallback.
+    # If codebook_parser is not present (I removed live-fetch helpers), provide a noop fallback.
     def guess_and_apply(df):
         return df
 import hashlib

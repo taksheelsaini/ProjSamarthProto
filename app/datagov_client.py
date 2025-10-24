@@ -8,9 +8,9 @@ SAMPLE_RAIN = os.path.normpath(os.path.join(HERE, '..', 'data', 'normalized_rain
 
 
 class DataGovClient:
-    """Simple local-data client. Always loads the normalized CSVs shipped in `data/`.
+    """I am a simple local-data client. I always load the normalized CSVs shipped in `data/`.
 
-    This intentionally has no network dependency so the prototype is reproducible offline.
+    I intentionally have no network dependency so my prototype is reproducible offline.
     """
     def get_agriculture_dataframe(self, resource_id=None):
         try:

@@ -1,7 +1,6 @@
-"""QA utilities that operate on local normalized CSVs and return simple provenance.
+"""My QA utilities operate on local normalized CSVs and return simple provenance.
 
-This module is intentionally minimal: it always uses the normalized CSVs placed in
-the repository under data/ and returns provenance URIs pointing at those files.
+I always use the normalized CSVs placed in the repository under data/ and return provenance URIs pointing at those files.
 """
 from typing import Dict, Any, List
 import os
